@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 40px 60px;
     z-index: 10; 
     background-color: transparent;  
 }
@@ -25,12 +25,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .nav-link {
     display: flex;
     gap: 25px;
     list-style: none;
+
 }
 
 .nav-link a {
@@ -48,7 +50,7 @@ body {
 
 .space-logo {
     height: auto;                   
-    width: 180px;
+    width: 210px;
     display: block;
     background: transparent;
     position: absolute;
@@ -59,7 +61,7 @@ body {
     z-index: 10;
     background: none;
     border: none;
-    transform: translateY(-35%);
+    transform: translateY(-28%);
 }
 
 
@@ -71,6 +73,7 @@ body {
     display: flex;
     align-items: flex-end; 
     padding-bottom: 100px;
+    padding-left: 60px;
 }
 
 .bg-video {
@@ -87,22 +90,40 @@ body {
 .content {
     position: relative;
     z-index: 2;         
-    padding: 0 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: white;
+    max-width: 600px;
 }
 
 .content p {
     font-size: 14px;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .content h1 {
-    font-size: 3rem;          
+    font-size: clamp(32px, 4vw, 48px);         
     font-weight: 700;         
-    line-height: 1.2;         
+    line-height: 1.1;         
     text-transform: uppercase;
+    margin: 0;
+}
+
+.buttom-section{
+   position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    max-width: 600px;
+}
+.content-second p {
+    text-transform: none; /
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
 }
