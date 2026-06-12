@@ -11,7 +11,7 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
-
+    overflow-x: hidden;
     
 }
 
@@ -19,8 +19,12 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 25px 50px;
-    z-index: 100;
+    padding: 20px 40px;
+    z-index: 10;
+     background-color: rgba(0, 0, 0, 0.5);   
+    backdrop-filter: blur(8px);            
+    -webkit-backdrop-filter: blur(8px);    
+    
 }
 .nav {
     display: flex;
@@ -60,4 +64,24 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+.content{
+    display: flex;
+    padding: 200px 40px;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    align-items: flex-start;
+}
+.content h1 {
+    font-size: 2rem;          
+    font-weight: 80;         
+    line-height: 1.2;         
+    margin: 0;              
+}
+.space-logo {
+    height: 100px;                   
+    width: 20;                    
+    display: block;
+    background-color: transparent;
 }
