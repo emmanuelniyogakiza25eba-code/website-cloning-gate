@@ -30,7 +30,7 @@ body {
 
 .nav-link {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     list-style: none;
 
 }
@@ -38,26 +38,26 @@ body {
 .nav-link a {
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 1px;
     transition: opacity 0.3s ease;
+    
 }
 
 .nav-link a:hover {
     opacity: 0.7;
+    display: flex;
 }
 
 .space-logo {
     height: auto;                   
-    width: 210px;
+    width: 200px;
     display: block;
     background: transparent;
     position: absolute;
-    position: absolute;
-    /* Adjust this percentage until it aligns perfectly with your text height */
     top: 5%; 
-    left: 30px;
+    left: 5px;
     z-index: 10;
     background: none;
     border: none;
@@ -126,4 +126,19 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin-top: 10px;
+}
+.launch-btn {
+    display: inline-flex;
+    align-items: right;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px; /* SpaceX uses very small text here */
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    
+    /* Outer Border */
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
