@@ -48,22 +48,31 @@ body {
 
 .space-logo {
     height: auto;                   
-    width: 180px; /* Adjusted to fit typical logo sizes */
+    width: 180px;
     display: block;
+    background: transparent;
+    position: absolute;
+    position: absolute;
+    /* Adjust this percentage until it aligns perfectly with your text height */
+    top: 5%; 
+    left: 30px;
+    z-index: 10;
+    background: none;
+    border: none;
+    transform: translateY(-35%);
 }
 
-/* Section Wrapper */
+
 .screen-section {
     position: relative; 
     width: 100%;
     height: 100vh;      
     overflow: hidden; 
     display: flex;
-    align-items: flex-end; /* Pushes content towards bottom left like SpaceX */
+    align-items: flex-end; 
     padding-bottom: 100px;
 }
 
-/* Background Videos */
 .bg-video {
     position: absolute;
     top: 0;
@@ -74,7 +83,7 @@ body {
     z-index: 1;
 }
 
-/* Content Container */
+
 .content {
     position: relative;
     z-index: 2;         
